@@ -1,0 +1,3 @@
+{
+  "index.js": "function dropElements(arr, func) {\n  for (let i = 0; i < arr.length; i++) {\n    if (func(arr[i])) {\n      console.log(i, \"true = \", arr, arr[i])\n      let newArr = arr.slice(i);\n      console.log(\"newArr = \", newArr);\n      return newArr;\n      break;\n    }\n  }\n  return [];\n} \ndropElements([0, 1, 0, 1], function(n) {return n === 1});\n"
+}
